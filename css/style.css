@@ -1,0 +1,239 @@
+/* --------------------------------------
+  Default Styling
+-------------------------------------- */
+
+body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+span {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #40547e;
+}
+
+p,
+li {
+    font-size: 18px;
+}
+
+/* --------------------------------------
+  Reusable Classes
+-------------------------------------- */
+
+.container {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto 80px;
+}
+
+/* --------------------------------------
+  Header
+-------------------------------------- */
+
+.header-logo {
+    font-size: 34px;
+    font-weight: 500;
+    border: #000 solid 1px;
+    padding: 0 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 48px;
+    width: 80%;
+    max-width: 1080px;
+}
+
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-list > li {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.nav-list > li:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* --------------------------------------
+  Main - Hero
+-------------------------------------- */
+
+.hero {
+    margin: 0 auto 40px;
+}
+
+.hero-img {
+    max-width: 100%;
+}
+
+/* --------------------------------------
+  Main - About
+-------------------------------------- */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-img {
+    width: 35%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-description {
+    width: 50%;
+    margin: auto 0;
+}
+
+/* --------------------------------------
+  Main - Works
+-------------------------------------- */
+
+.works {
+    display: flex;
+    justify-content: center;
+}
+
+.works-description {
+    width: 30%;
+    margin: 0;
+}
+
+.works-description:not(:last-child) {
+    margin-right: 20px;
+}
+
+.works-description > img {
+    width: 100%;
+}
+
+/* --------------------------------------
+  Footer
+-------------------------------------- */
+
+footer {
+    margin: 0 auto 40px;
+}
+
+.footer-copy {
+    text-align: center;
+}
+
+.footer-copy > small {
+    font-size: 18px;
+}
+
+/* --------------------------------------
+  Mobile Styling
+-------------------------------------- */
+
+@media screen and (max-width: 767px) {
+
+    /* --------------------------------------
+    Default Styling
+    -------------------------------------- */
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    /* --------------------------------------
+    Reusable Classes
+    -------------------------------------- */
+
+    .container {
+        width: 95%;
+        margin: 0 auto 80px;
+    }
+
+    /* --------------------------------------
+    Header
+    -------------------------------------- */
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .header-logo {
+        padding: 0 15px;
+    }
+
+    .header-nav {
+        margin: auto 0;
+    }
+
+    .header-logo,
+    .nav-list > li {
+        font-size: 24px;
+    }
+
+    /* --------------------------------------
+    Main - About
+    -------------------------------------- */
+
+    .about {
+        display: block;
+        width: 80%;
+    }
+
+    .about-img {
+        display: block;
+        width: 90%;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .about-description {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* --------------------------------------
+    Main - Works
+    -------------------------------------- */
+    
+    .works {
+        display: block;
+    }
+
+    .works-description {
+        width: 100%;
+    }
+
+    .works-description > p {
+        margin-top: 0;
+    }
+}
